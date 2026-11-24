@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookEase - Services</title>
+  <link rel="icon" type="image/png" href="./assets/logo.png">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script defer src="./supabaseClient.js"></script>
+  <script defer src="./script.js"></script>
+</head>
+
+<body class="page-services" data-requires-auth="true">
+  <header>
+    <div id="header-left-side">
+      <img src="./assets/logo.png" alt="BookEase Logo" />
+      <h1 class="headertitle">BookEase</h1>
+    </div>
+
+    <nav id="icons">
+      <a href="./home.html" class="nav-link">Home</a>
+      <a href="./services.html" class="nav-link active">Services</a>
+      <a href="./contact.html" class="nav-link">Contact</a>
+      <a href="./my_bookings.html" class="nav-link">My Bookings</a>
+      <a href="#" class="nav-link logout-link" id="logout-link">Logout</a>
+    </nav>
+  </header>
+
+  <main class="services-page">
+    <h1 class="services-title">BOOK ROOMS</h1>
+    <div class="services-container" style="flex-wrap: wrap; justify-content: center; gap: 1.8em;">
+      <div class="service-card">
+        <img src="./assets/two.jpg" class="room-image" alt="Room Image">
+        <h3>MAAYO HOTEL</h3>
+        <p><img src="./assets/capacity.png" class="room-details" alt=""> Good for 2</p>
+        <p><img src="./assets/eat.png" class="room-details" alt=""> Free breakfast included</p>
+        <p><img src="./assets/storey.png" class="room-details" alt=""> 3rd to 8th floor</p>
+        <p><img src="./assets/money.png" class="room-details" alt=""> Php 4,500 per night</p>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+
+      <div class="service-card">
+        <img src="./assets/one.jpg" class="room-image" alt="Room Image">
+        <h3>NUSTAR DELUXE</h3>
+        <p><img src="./assets/capacity.png" class="room-details" alt=""> Good for 2</p>
+        <p><img src="./assets/eat.png" class="room-details" alt=""> Free breakfast included</p>
+        <p><img src="./assets/storey.png" class="room-details" alt=""> 10th to 15th floor</p>
+        <p><img src="./assets/money.png" class="room-details" alt=""> Php 5,000 per night</p>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+
+      <div class="service-card">
+        <img src="./assets/three.jpg" class="room-image" alt="Room Image">
+        <h3>NATIVE CAMP</h3>
+        <p><img src="./assets/capacity.png" class="room-details" alt=""> For Family Use</p>
+        <p><img src="./assets/eat.png" class="room-details" alt=""> Free breakfast included</p>
+        <p><img src="./assets/storey.png" class="room-details" alt=""> Not Applicable</p>
+        <p><img src="./assets/money.png" class="room-details" alt=""> Php 7,500 per night</p>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+
+      <div class="service-card">
+        <img src="./assets/four.jpg" class="room-image" alt="Room Image">
+        <h3>UBEC PENTHOUSE</h3>
+        <p><img src="./assets/capacity.png" class="room-details" alt=""> For Family Use</p>
+        <p><img src="./assets/eat.png" class="room-details" alt=""> Can cook inside</p>
+        <p><img src="./assets/storey.png" class="room-details" alt=""> 20th to 30th floor</p>
+        <p><img src="./assets/money.png" class="room-details" alt=""> Php 15,000 per night</p>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+
+      <div class="service-card">
+        <img src="./assets/five.jpg" class="room-image" alt="Room Image">
+        <h3>CITY VIEW SUITE</h3>
+        <p><img src="./assets/capacity.png" class="room-details" alt=""> Good for 4</p>
+        <p><img src="./assets/eat.png" class="room-details" alt=""> Breakfast included</p>
+        <p><img src="./assets/storey.png" class="room-details" alt=""> 8th Floor</p>
+        <p><img src="./assets/money.png" class="room-details" alt=""> Php 7,500 per night</p>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+
+      <div class="service-card">
+        <img src="./assets/six.jpg" class="room-image" alt="Room Image">
+        <h3>ZEN STUDIO</h3>
+        <p><img src="./assets/capacity.png" class="room-details" alt=""> Good for 2</p>
+        <p><img src="./assets/eat.png" class="room-details" alt=""> No food included</p>
+        <p><img src="./assets/storey.png" class="room-details" alt=""> Ground Floor</p>
+        <p><img src="./assets/money.png" class="room-details" alt=""> Php 3,000 per night</p>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+
+      <div class="service-card">
+        <img src="./assets/seven.jpg" class="room-image" alt="Room Image">
+        <h3>GARDEN VILLA</h3>
+        <p><img src="./assets/capacity.png" class="room-details" alt=""> Family size</p>
+        <p><img src="./assets/eat.png" class="room-details" alt=""> Buffet included</p>
+        <p><img src="./assets/storey.png" class="room-details" alt=""> Not Applicable</p>
+        <p><img src="./assets/money.png" class="room-details" alt=""> Php 12,000 per night</p>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+
+      <div class="service-card">
+        <img src="./assets/eight.jpg" class="room-image" alt="Room Image">
+        <h3>SKYLINE LOFT</h3>
+        <p><img src="./assets/capacity.png" class="room-details" alt=""> Good for 2</p>
+        <p><img src="./assets/eat.png" class="room-details" alt=""> Mini-bar included</p>
+        <p><img src="./assets/storey.png" class="room-details" alt=""> 20th Floor</p>
+        <p><img src="./assets/money.png" class="room-details" alt=""> Php 9,000 per night</p>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+
+      <div class="service-card">
+        <img src="./assets/nine.jpg" class="room-image" alt="Room Image">
+        <h3>SUNSET BUNGALOW</h3>
+        <p><img src="./assets/capacity.png" class="room-details" alt=""> Good for 2</p>
+        <p><img src="./assets/eat.png" class="room-details" alt=""> Welcome drinks</p>
+        <p><img src="./assets/storey.png" class="room-details" alt=""> Beachfront</p>
+        <p><img src="./assets/money.png" class="room-details" alt=""> Php 6,800 per night</p>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+
+      <div class="service-card">
+        <img src="./assets/ten.jpg" class="room-image" alt="Room Image">
+        <h3>MOUNTAIN RETREAT</h3>
+        <p><img src="./assets/capacity.png" class="room-details" alt=""> Good for 2</p>
+        <p><img src="./assets/eat.png" class="room-details" alt=""> Fruits options</p>
+        <p><img src="./assets/storey.png" class="room-details" alt=""> Not Applicable</p>
+        <p><img src="./assets/money.png" class="room-details" alt=""> Php 5,500 per night</p>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+
+      <div class="service-card">
+        <img src="./assets/eleven.jpg" class="room-image" alt="Room Image">
+        <h3>PINEWOOD CABIN</h3>
+        <p><img src="./assets/capacity.png" class="room-details" alt=""> Good for 3</p>
+        <p><img src="./assets/eat.png" class="room-details" alt=""> Coffee bar</p>
+        <p><img src="./assets/storey.png" class="room-details" alt=""> 5th Floor</p>
+        <p><img src="./assets/money.png" class="room-details" alt=""> Php 9,500 per night</p>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+
+      <div class="service-card">
+        <img src="./assets/four.jpg" class="room-image" alt="Room Image">
+        <h3>IZZ BARKADA</h3>
+        <p><img src="./assets/capacity.png" class="room-details" alt=""> Group of 6</p>
+        <p><img src="./assets/eat.png" class="room-details" alt=""> No Inclusions</p>
+        <p><img src="./assets/storey.png" class="room-details" alt=""> 2nd Floor</p>
+        <p><img src="./assets/money.png" class="room-details" alt=""> Php 10,000 per night</p>
+        <button class="book-now-btn">Book Now</button>
+      </div>
+    </div>
+  </main>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <div id="booking-form-container">
+        <h2>Complete Your Booking</h2>
+        <form id="hotel-booking-form">
+          <label for="pax_name">Full Name</label>
+          <input type="text" id="pax_name" name="pax_name" required placeholder="John Doe">
+
+          <label for="pax_count">Number of Pax</label>
+          <input type="number" id="pax_count" name="pax_count" required min="1">
+
+          <label for="booked_dates">Booking Date</label>
+          <input type="date" id="booked_dates" name="booked_dates" required>
+
+          <label for="pax_email">Email Address</label>
+          <input type="email" id="pax_email" name="pax_email" required>
+
+          <label for="pax_phone">Contact Number</label>
+          <input type="tel" id="pax_phone" name="pax_phone" required placeholder="09123456789">
+
+          <div class="form-buttons">
+            <button type="submit" class="book-now-btn">Submit Booking</button>
+            <button type="button" id="closePopup" class="cancel-btn">Cancel</button>
+          </div>
+        </form>
+      </div>
+
+      <div id="success-message" style="display: none;">
+        <p style="font-size: 1.5em; color: green;">✔ Successfully booked!</p>
+        <button type="button" id="successOkBtn" class="book-now-btn">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 BookEase | All Rights Reserved
+  </footer>
+</body>
+</html>
